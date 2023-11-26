@@ -40,11 +40,11 @@ py -3 -m venv .venv
 .venv\Scripts\activate
 ```
 ### Run project
-If you use python filename "app.py", you can run:
+If you clone this, repo, the command for run is:
+```
+flask --app main run
+```
+But if you rename "main.py" to "app.py", you can run with:
 ```
 flask run
-```
-Else, you can run this:
-```
-flask --app filename run
 ```
