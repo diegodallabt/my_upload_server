@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My File Server</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .align {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .align a {
+        margin: 10px;
+    }
+
+    .submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>My Upload File</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            <br>
+            <div class="submit">
+                {{form.submit()}}
+            </div>
+        </form>
+        <div class="align">
+            <a href="{{ url_for('files') }}">Files</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
