@@ -1,9 +1,9 @@
 # What do you need install
-
+Install every packages listed here for execute this project in your computer.
 ## Flask
 
 ```
-$ pip install flask
+$ pip install Flask
 ```
 
 ### Packages
@@ -23,4 +23,27 @@ $ pip install flask-wtf
 
 ```
 $ pip install wtforms
+```
+
+# How to use
+
+## Windows
+### Create environment
+```
+cd myproject
+```
+```
+py -3 -m venv .venv
+```
+```
+.venv\Scripts\activate
+```
+### Run project
+If you use python filename "app.py", you can run:
+```
+flask run
+```
+Else, you can run this:
+```
+flask --app filename run
 ```
