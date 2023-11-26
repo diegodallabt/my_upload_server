@@ -26,6 +26,7 @@ $ pip install wtforms
 ```
 
 # How to use
+For run this project, you need execute any commands:
 
 ## Windows
 ### Create environment
